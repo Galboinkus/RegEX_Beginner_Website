@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <a class="home" href="index.html">Home</a> |
+    <a class="documentation" style="color:white;" href="documentation.html">Documentation</a> |
+    <a class="hints" href="index.html">Hints</a>
+  </nav>
+
+  <br>
+    
+
+  
+  <div style="margin-top: 0px; border:none red 2px;" class="container">
+    <div class="buttons">
+      <button class="button" onclick="what_Is_Regex()">What is RegEX?</button>
+      <button class="button" onclick="displayInfo('Basics: abc', 'Matches with a specific string that correlates with the entered RegEX', 'abc', '[abc]', '[123] ; [not the right match]')">Basics: abc</button>
+      <button class="button" onclick="displayInfo('Any Character: .', 'Symbolized as a wild card, it can match with any letters, special characters, and digits.', '...', '[abc] ; [123]', 'Newlines and Line Terminators')">Any Character: .</button>
+      <button class="button" onclick="displayInfo('Any Digits: \\d', 'Used to match certain characters that represents a digit.', '\\d\\d', '[12] ; [42]', '[ab] ; [!?]')">Any Digits: \d</button>
+      <button class="button" onclick="displayInfo('Any Non-Digits: \\D', 'Opposite of \\d, \\D matches with characters that are NOT represented as digits.', '\\D\\D', '[ab] ; [!?]', '[12] ; [42]')">Any Non-Digits: \D</button>
+      <button class="button" onclick="displayInfo('Any Alphanumeric Characters: \\w', 'This symbol matches with any word characters. A word character is a character a-z, A-Z and _ (underscore)', '\\w\\w', '[ab] ; [YZ]', '[12] ; [?@]')">Any Alphanumeric Characters: \w</button>
+      <button class="button" onclick="displayInfo('Any Non-Alphanumeric Character: \\W', 'Opposite of \\w, \\W matches with characters that are NOT represented as word characters', '\\W\\W', '[12] ; [?@]', '[ab] ; [YZ]')">Any Non-Alphanumeric Character: \W</button>
+      <button class="button" onclick="displayInfo('Any Whitespace: \\s', 'The \\s metacharacter matches whitespace character.', '\\d\\s\\w', '[1 S] ; [9 A]', '[1_S] ; [9AA]')">Any Whitespace: \s</button>
+      <button class="button" onclick="displayInfo('Any Non-Whitespace: \\S', 'The \S metacharacter matches non-whitespace characters.', '\\d\\S\\w', '[1_S] ; [9AA]', '[1 S] ; [9 A]')">Any Non-Whitespace: \S</button>
+      <button class="button" onclick="displayInfo('RegEX Grouping: [abc]', 'Brackets [abc] specifies matches for the characters inside the brackets.', '[ct]ab', '[cab] ; [tab]', '[rab] ; [dab]')">Only a, b, or c: [abc]</button>
+      <button class="button" onclick="displayInfo('RegEX Grouping: [^abc]', 'Brackets [^abc] specifies matches for any character NOT between the brackets.', '[^ct]', '[rab] ; [dab]', '[cab] ; [rab]')">Not a, b, or c: [^abc]</button>
+      <button class="button" onclick="displayInfo('Repetition: {n}', 'The X{n} quantifier matches any string that contains a sequence of n X\'s.', 'a{3}bc', '[aaabc]', '[abc] ; [aabc]')">N Repetition: {n}</button>
+      <button class="button" onclick="displayInfo('Repetition: {n,m}', 'The X{n,m} quantifier matches any string that contains a sequence of n to m X\'s.', 'a{2, 4}bc', '[aaabc] ; [aaaabc]', '[abc] ; [aaaaabc]')">N-M Repetition: {n,m}</button>
+      <button class="button" onclick="displayInfo('Repetition: *', 'The x* quantifier matches any string that contains zero or more occurrences of X.', 'a*bc', '[abc] ; [bc]', '[Anything that doesn\'t contain \'bc\']')">Zero or More Repetition: *</button>
+      <button class="button" onclick="displayInfo('Repetition: +', 'The n+ quantifier matches any string that contains at least one n.', 'a+bc', '[abc] ; [aabc]', '[bc]')">One or More Repetition: *</button>
+    </div>
+
+    <!--<div style="float:right; width: 20px;">
+      <h1>Hey</h1>
+    </div>-->
+    
+    
+    <div style="float:right;width:67%;background-color: #243037; border: solid #344047 20px; border-radius: 30px;">
+      <h1 id="info">Ask.</h1>
+      <p style="margin: 10px 10px;" id="description">Subject screams like a banshee and disorients the MERCs' visions</p>
+  
+      <h3 id="example">Example</h3>
+      <h4 style="color:#e0ff4f;" id="regex">RegEx: </h4>
+      <p style="color:#bfd7ea;" id="match">Things that Match:</p>
+      <p style="color:#ff6663;"id="no-match">Things that Don't Match:</p>
+      <!--<img style="border-radius:30px;" src="https://trello.com/1/cards/61b329167771d68b3e74fb16/attachments/61c1840e66b7d87788d79572/download/image.png">-->
+    </div>
+
+    
+  </div>
+
+  
+
+  <script src="documentation.js"></script>
+</body>
+
+</html>
