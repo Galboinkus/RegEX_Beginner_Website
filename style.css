@@ -1,0 +1,137 @@
+/*
+----------------------
+Body
+----------------------
+*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color:#0B3954 ;
+  color:white;
+  font-family:monospace;
+  font-size: 150%;
+}
+
+/*
+----------------------
+Headings
+----------------------
+*/
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 30px 20px;
+}
+
+h4 {
+  display:inline;
+  text-align:center;
+}
+
+
+/*
+----------------------
+Others
+----------------------
+*/
+
+div {
+  text-align: center;
+  display:block;
+}
+
+a:link , a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color:white;
+}
+
+/*
+----------------------
+Classes
+----------------------
+*/
+
+.highlight {
+  color: #e0ff4f;
+}
+
+.container {
+  margin: 20px 20px;
+  background-color: #243037;
+  border: solid #344047 20px;
+  border-radius: 30px;
+}
+
+.button{
+  float:left;
+}
+
+
+/*
+----------------------
+Specifics
+----------------------
+*/
+
+input {
+  background-color:#242027;
+  color: #e0ff4f;
+  font-size: 120%;
+  font-family:monospace;
+  text-align:center;
+  border: solid #26222a 2px;
+  border-radius:10px;
+  margin: 10px 10px -10px 10px;
+}
+
+button {
+  color: #bfd7ea;
+  background-color:#243037;
+  border: solid #243037 2px;
+  border-radius: 20px;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight:600;
+  padding: 10px 30px;
+}
+
+button:active{
+  color:white;
+}
+
+button:hover{
+  background-color: #344047;
+}
+
+/*
+----------------------
+Navigation
+----------------------
+*/
+
+nav {
+  text-align:center;
+  color: white;
+}
+
+.home {
+  color:#e0ff4f;
+}
+
+.documentation {
+  color:#bfd7ea;
+}
+
+.hints {
+  color: #ff6663;
+}
+
